@@ -1,0 +1,68 @@
+{
+  "name": "markdown-toc-number",
+  "type": "module",
+  "version": "1.0.0",
+  "packageManager": "pnpm@10.27.0",
+  "description": "Auto add heading numbers and generate TOC for Markdown documents",
+  "author": "ricsy",
+  "license": "MIT",
+  "homepage": "https://github.com/ricsy/markdown-toc-number#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricsy/markdown-toc-number.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ricsy/markdown-toc-number/issues"
+  },
+  "keywords": [
+    "markdown",
+    "toc",
+    "heading",
+    "number",
+    "table-of-contents",
+    "auto-number"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "dist",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "mdast": "^3.0.0",
+    "mdast-util-to-string": "^4.0.0",
+    "remark": "^15.0.1",
+    "unist-util-visit": "^5.1.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "6.7.3",
+    "@eslint/js": "^10.0.1",
+    "@types/mdast": "^4.0.4",
+    "eslint": "^10.0.3",
+    "eslint-plugin-format": "^2.0.1",
+    "jiti": "^2.6.1",
+    "tslib": "^2.8.1",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.57.1",
+    "vitest": "^4.1.0"
+  }
+}
