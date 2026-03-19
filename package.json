@@ -47,7 +47,6 @@
     "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
-    "mdast": "^3.0.0",
     "mdast-util-to-string": "^4.0.0",
     "remark": "^15.0.1",
     "unist-util-visit": "^5.1.0"
